@@ -9,8 +9,8 @@ contract Register {
         bool isRegistered;
     }
 
-    mapping(address => User) public users;
-    mapping (string => address) public verification;
+    mapping(address => User) internal users;
+    mapping (string => address) internal verification;
 
     function register_here(string memory _name, string memory _email) public {
         
